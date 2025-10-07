@@ -1,45 +1,46 @@
-# Educational Malware Analysis Project
+# Educational Keylogger
 
-> **⚠️ IMPORTANT DISCLAIMER: EDUCATIONAL PURPOSE ONLY**
-> This project is created strictly for educational purposes in a controlled environment. 
-> The malware simulations are for learning cybersecurity concepts only.
-> **DO NOT USE** these scripts for malicious activities.
+**IMPORTANT WARNING**: This project is developed exclusively for educational purposes and learning in cybersecurity courses. The use of keyloggers without explicit authorization is illegal and unethical.
 
-## Project Overview
+## 📋 Project Description
 
-This repository contains educational simulations of malware behavior, specifically Ransomware and Keylogger implementations, created as part of a cybersecurity course. The goal is to understand how these threats work in order to better defend against them.
+This is a simple keylogger developed in Python using the `pynput` library, created as part of a cybersecurity course to demonstrate keyboard input monitoring concepts.
 
-## 🎯 Learning Objectives
+## 🎯 Educational Purpose
 
-- Understand the practical functioning of Ransomware and Keyloggers
-- Identify how malware exploits vulnerabilities and human factors
-- Program Python scripts simulating real attacks in controlled environments
-- Develop strategies for malware defense and prevention
-- Document experiments and build technical portfolio
+- Demonstrate how keyloggers work at a technical level
+- Understand methods of capturing keyboard input
+- Learn about prevention against this type of software
+- Raise awareness about security risks related to keyloggers
 
-## 📁 Project Structure
+## ⚙️ Features
 
-### 🔐 Simulated Ransomware
-- `ransomware_simulator.py` - Encryption/decryption simulation with ransom note
-- `file_generator.py` - Creates test files for demonstration
-- `test_files/` - Directory containing sample files for testing
+- Alphanumeric key capture
+- Special handling for keys such as:
+  - Space, Enter, Tab
+  - Backspace, Escape
+  - Ignores modifier keys (Shift, Ctrl, Alt, etc.)
+- Stores pressed keys in a `log.txt` file
 
-### ⌨️ Simulated Keylogger
-- `keylogger_simulator.py` - Captures keystrokes and saves to file
-- `email_sender.py` - Simulates automated email reporting
+## 🛠️ Requirements
 
-### 🛡️ Defense Analysis
-- `prevention_measures.md` - Comprehensive prevention strategies
-- `detection_methods.md` - Detection and mitigation techniques
+- Python 3.6+
+- pynput library
 
-## 🚀 Getting Started
+### Installation of Dependencies
 
-### Prerequisites
-- Python 3.8+
-- Required packages (install via `requirements.txt`)
-
-### Installation
 ```bash
-git clone https://github.com/yourusername/malware-analysis-educational-project.git
-cd malware-analysis-educational-project
-pip install -r requirements.txt
+pip install pynput
+```
+
+## 🛡️ Protection Measures Against Keyloggers
+Use updated antivirus software
+
+- Monitor suspicious processes in task manager
+
+- Use virtual keyboards for entering sensitive passwords
+
+- Keep operating system and applications updated
+
+- Be wary of software from unknown sources
+
